@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,8 +27,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <header>
           <h1>My NextJs Website</h1>
+
+          <nav>
+            <Link href="/">Home</Link>
+            <Link href="/products">Products</Link>
+          </nav>
         </header>
+
         {children}
+
         <footer>
           <p>© 2026 My NextJS Website</p>
         </footer>
