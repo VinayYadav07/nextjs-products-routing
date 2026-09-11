@@ -1,0 +1,9 @@
+const Home = () => {
+  return (
+    <main>
+      <h1>Welcome to the Products Store</h1>
+    </main>
+  );
+};
+
+export default Home;
